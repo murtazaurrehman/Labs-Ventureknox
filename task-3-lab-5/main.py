@@ -3,6 +3,10 @@ r=int(input())
 print("Please enter the number of rows for your array")
 c=int(input())
 a=[]
+
+
+
+
 for i in range(r):
     matrix=[]
     for j in range(c):
