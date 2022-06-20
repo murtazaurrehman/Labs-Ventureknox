@@ -8,6 +8,10 @@ for i in range(0,x):
 mean=int(x/2);
 
 for i in range (mean,x-1):
-    print(y[i])
+bvewoubvui b  njwow 
+
+
+
+
     
     
