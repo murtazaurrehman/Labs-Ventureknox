@@ -1,0 +1,89 @@
+class Glass:
+    
+    """
+    1. Abstaction
+    2. Encapsulation
+    3. Inheritence
+    4. Polymorphism
+
+
+    Access Modifiers: public, private, !package
+    """
+
+    def __init__(self, length, capacity, shape, color):
+        self.__length = length
+        self.__capacity = capacity
+        self.__shape = shape
+        self.__color = color
+
+    # functional methodsñ
+    def remove(self, value):
+        """
+        This function will remove the water capacity in the glass
+        specified by the value passed to it.
+
+        :params value (float): value to be subtracted from the capacity
+
+        :returns: (boolean) True/False depending on the success of the operation
+        """
+
+        if value > self.capacity:
+            return False
+
+        self.capacity = self.capacity - value
+        return True
+
+    def add(self, value):
+        """
+
+        :params value:
+
+        :returns (boolean):
+        """
+
+        return True
+
+    # Getter functions
+    def get_length(self):
+        """
+        Fetches the length of the glass
+        :return (float): length of glass
+        """
+
+        return self.__length
+
+    # Setter functions
+    def set_length(self, length):
+        """
+        Set the length of the glass
+        :params length (float): length of the glass
+
+        :return (boolean): True/Flase depending on success
+        """
+
+        if length < 0:
+            return False
+
+        if type(length) != float:
+            return False
+
+        self.__length = length
+        return True
+
+
+if __name__ == "__main__":
+    glass_1 = Glass(12, 6, "cirlce", "transparent")
+    glass_2 = Glass(10, 3, "square", "transparent")
+    print(glass_1)
+    print("Length of glass:", glass_1.get_length())
+    # print("Capacity of glass:", glass_1.__capacity)
+    # print("Color of glass:", glass_1.__color)
+    # # glass_1.color = "purple"
+    # print("Color of glass:", glass_1.__color)
+    # print(glass_1.testing)
+
+    # print(glass_2)
+    # print("Length of glass:", glass_2.length)
+    # print("Capacity of glass:", glass_2.capacity)
+    # print("Color of glass:", glass_2.color)
+    # # print(glass_2.testing)
